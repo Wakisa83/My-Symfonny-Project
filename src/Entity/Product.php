@@ -20,6 +20,12 @@ class Product
     {
         return $this->id;
     }
+    public function setId(int $id): static
+    {
+        $this->productName = $id;
+
+        return $this;
+    }
 
     public function getProductName(): ?string
     {
